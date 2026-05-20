@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Disallow common bot-trap paths
+Disallow: /api/
+
+Sitemap: https://strmechanical.com/sitemap.xml
