@@ -24,6 +24,11 @@
   "canonicalUrl": "https://strmechanical.com/virginia-beach",
   "parentLink": "https://firstcallmechanical.com",
   "isExternalDomain": true,
+  "lineCardPdf": "assets/docs/str-va-line-card.pdf",
+  "footerBadge": {
+    "src": "shared/img/logos/cfesa-logo.png",
+    "alt": "CFESA — Commercial Food Equipment Service Association member"
+  },
   "heroPhoto": "shared/img/photos/str/virginia-beach.jpg",
   "heroPhotoTodo": "556 KB JPG — already reasonable; consider converting to WebP for an extra ~30% size win. Ken Burns animation drives the cinematic feel in lieu of a video.",
   "careersUrl": "https://firstcallmechanical.com/mechanical/careers",

@@ -252,6 +252,34 @@
   background: var(--color-accent);
 }
 
+/* Download Line Card button — only rendered on branches with `lineCardPdf` set. */
+.tech-list__cta {
+  margin-top: var(--space-6);
+  display: flex;
+  justify-content: center;
+}
+.tech-list__cta .btn { display: inline-flex; align-items: center; gap: var(--space-2); }
+.tech-list__cta .btn__icon { width: 1.1em; height: 1.1em; flex: 0 0 auto; }
+
+/* Footer membership badge — only rendered on branches with `footerBadge` set
+   (currently just Virginia Beach with the CFESA logo). */
+.site-footer__memberships {
+  margin-top: var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: center;
+}
+.site-footer__memberships-badge {
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.85;
+  transition: opacity var(--duration-fast) var(--ease-out);
+}
+.site-footer__memberships-badge:hover { opacity: 1; }
+
 /* ===== INDUSTRIES HONEYCOMB ===== */
 .industries-honeycomb { max-width: 760px; margin-inline: auto; display: block; }
 .hex--tier-1 { fill: var(--fc-tier-1); }

@@ -289,6 +289,19 @@
           <li>{{this}}</li>
           {{/each}}
         </ul>
+
+        {{#if lineCardPdf}}
+        <div class="tech-list__cta">
+          <a class="btn btn--primary" href="{{lineCardPdf}}" download>
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Line Card
+          </a>
+        </div>
+        {{/if}}
       </div>
     </section>
 
@@ -624,6 +637,11 @@
         <span>&copy; {{copyrightYear}} {{name}}. All rights reserved.</span>
         <span><a href="{{parentLink}}">FirstCall Mechanical</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></span>
       </div>
+      {{#if footerBadge}}
+      <div class="site-footer__memberships">
+        <img class="site-footer__memberships-badge" src="{{footerBadge.src}}" alt="{{footerBadge.alt}}" />
+      </div>
+      {{/if}}
     </div>
   </footer>
 

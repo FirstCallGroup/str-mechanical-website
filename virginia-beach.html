@@ -1696,6 +1696,34 @@ small, .text-small { font-size: var(--text-sm); }
   background: var(--color-accent);
 }
 
+/* Download Line Card button — only rendered on branches with `lineCardPdf` set. */
+.tech-list__cta {
+  margin-top: var(--space-6);
+  display: flex;
+  justify-content: center;
+}
+.tech-list__cta .btn { display: inline-flex; align-items: center; gap: var(--space-2); }
+.tech-list__cta .btn__icon { width: 1.1em; height: 1.1em; flex: 0 0 auto; }
+
+/* Footer membership badge — only rendered on branches with `footerBadge` set
+   (currently just Virginia Beach with the CFESA logo). */
+.site-footer__memberships {
+  margin-top: var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: center;
+}
+.site-footer__memberships-badge {
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.85;
+  transition: opacity var(--duration-fast) var(--ease-out);
+}
+.site-footer__memberships-badge:hover { opacity: 1; }
+
 /* ===== INDUSTRIES HONEYCOMB ===== */
 .industries-honeycomb { max-width: 760px; margin-inline: auto; display: block; }
 .hex--tier-1 { fill: var(--fc-tier-1); }
@@ -2193,6 +2221,19 @@ small, .text-small { font-size: var(--text-sm); }
           <li>Water-Source Heat Pumps</li>
           
         </ul>
+
+        
+        <div class="tech-list__cta">
+          <a class="btn btn--primary" href="assets/docs/str-va-line-card.pdf" download>
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Line Card
+          </a>
+        </div>
+        
       </div>
     </section>
 
@@ -2578,6 +2619,11 @@ small, .text-small { font-size: var(--text-sm); }
         <span>&copy; 2026 STR Mechanical — Virginia Beach. All rights reserved.</span>
         <span><a href="https://firstcallmechanical.com">FirstCall Mechanical</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></span>
       </div>
+      
+      <div class="site-footer__memberships">
+        <img class="site-footer__memberships-badge" src="shared/img/logos/cfesa-logo.png" alt="CFESA — Commercial Food Equipment Service Association member" />
+      </div>
+      
     </div>
   </footer>
 
