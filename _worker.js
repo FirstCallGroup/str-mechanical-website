@@ -125,6 +125,14 @@ async function handleContactForm(request, env) {
       return silentOk();
     }
 
+    // Layer 6 — Markup/script probe. Vulnerability scanners spray <script>,
+    // javascript: URIs, and on*= handlers into every field. The email already
+    // escapes everything, so this just keeps that junk out of the inbox.
+    if (containsMaliciousMarkup(data)) {
+      console.warn("Markup/script probe rejected");
+      return silentOk();
+    }
+
     const formId = String(data._form || "").trim();
     const to = FORM_ROUTING[formId];
     if (!to) {
@@ -188,6 +196,19 @@ async function verifyTurnstile(token, request, env) {
 
 function silentOk() {
   return jsonResp({ ok: true });
+}
+
+// True if any user-supplied string value looks like an HTML/JS injection probe.
+// Internal fields (_form, _ts, cf-turnstile-response, etc.) are skipped — only
+// human-entered values are checked. Matches: <script> / </script>, <iframe>,
+// javascript: URIs, and inline event handlers like onerror= / onload=.
+const MALICIOUS_MARKUP = /<\s*script|<\s*\/\s*script|<\s*iframe|javascript\s*:|\bon\w+\s*=/i;
+function containsMaliciousMarkup(data) {
+  for (const [k, v] of Object.entries(data)) {
+    if (k.startsWith("_") || k === "cf-turnstile-response") continue;
+    if (typeof v === "string" && MALICIOUS_MARKUP.test(v)) return true;
+  }
+  return false;
 }
 
 function jsonResp(body, status = 200) {
