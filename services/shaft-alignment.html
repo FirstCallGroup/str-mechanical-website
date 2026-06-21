@@ -1507,6 +1507,36 @@ small, .text-small { font-size: var(--text-sm); }
   font-size: var(--text-sm);
 }
 
+/* ===== INTRO SPLIT (what-it-is text + photo) ===== */
+.service-intro__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+@media (max-width: 1023px) { .service-intro__grid { grid-template-columns: 1fr; gap: var(--space-6); } }
+.service-intro__body h2 { margin-bottom: var(--space-4); max-width: 20ch; }
+.service-intro__body p {
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-4);
+  max-width: 60ch;
+}
+.service-intro__body p:last-child { margin-bottom: 0; }
+.service-intro__figure { margin: 0; }
+.service-intro__figure img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  object-fit: cover;
+}
+.service-intro__caption {
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
 /* ===== TWO-COLUMN INFO BLOCK (why-it-matters band) ===== */
 .info-grid {
   display: grid;
@@ -1729,6 +1759,29 @@ small, .text-small { font-size: var(--text-sm); }
         </div>
       </div>
     </section>
+
+    <!-- 1b. WHAT IT IS — intro split with photo -->
+    
+    <section class="section">
+      <div class="container">
+        <div class="service-intro__grid">
+          <div class="service-intro__body">
+            <span class="eyebrow">What it is</span>
+            <h2>What is precision shaft alignment?</h2>
+            
+            <p>Precision shaft alignment is the process of bringing two coupled shafts — a motor and the pump, fan, or compressor it drives — onto the same axis of rotation, both side-to-side and angularly. A dual-laser system is mounted across the coupling, and as the shafts are rotated the lasers measure offset and angular misalignment to the thousandth of an inch. Our technicians then shim and shift the machine until both shafts turn on one true line.</p>
+            
+            <p>It matters because almost nothing leaves installation perfectly aligned, and misalignment is one of the leading causes of rotating-equipment failure. Even a few thousandths of an inch force bearings, seals, and couplings to fight a constant side-load — driving up vibration, heat, and energy draw while quietly shortening the life of expensive equipment. Correcting it to OEM tolerance is one of the highest-return reliability steps a facility can take: less unplanned downtime, longer component life, and lower power bills.</p>
+            
+          </div>
+          <figure class="service-intro__figure">
+            <img src="../shared/img/photos/str/shaft-alignment.jpg" alt="STR Mechanical technician using a ROTALIGN laser alignment system to align a motor-to-pump coupling, with the laser beam visible across the shafts." loading="lazy" decoding="async" width="972" height="630" />
+            <figcaption class="service-intro__caption">Laser shaft alignment in the field — measuring offset and angularity across the coupling in real time.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    
 
     <!-- 2. WHAT'S INCLUDED — feature grid -->
     <section class="section">

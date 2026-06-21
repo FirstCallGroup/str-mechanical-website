@@ -6,6 +6,16 @@
   "canonicalUrl": "https://strmechanical.com/services/shaft-alignment",
   "careersUrl": "https://firstcallmechanical.com/mechanical/careers",
 
+  "introEyebrow": "What it is",
+  "introHeading": "What is precision shaft alignment?",
+  "introParagraphs": [
+    "Precision shaft alignment is the process of bringing two coupled shafts — a motor and the pump, fan, or compressor it drives — onto the same axis of rotation, both side-to-side and angularly. A dual-laser system is mounted across the coupling, and as the shafts are rotated the lasers measure offset and angular misalignment to the thousandth of an inch. Our technicians then shim and shift the machine until both shafts turn on one true line.",
+    "It matters because almost nothing leaves installation perfectly aligned, and misalignment is one of the leading causes of rotating-equipment failure. Even a few thousandths of an inch force bearings, seals, and couplings to fight a constant side-load — driving up vibration, heat, and energy draw while quietly shortening the life of expensive equipment. Correcting it to OEM tolerance is one of the highest-return reliability steps a facility can take: less unplanned downtime, longer component life, and lower power bills."
+  ],
+  "introImage": "../shared/img/photos/str/shaft-alignment.jpg",
+  "introImageAlt": "STR Mechanical technician using a ROTALIGN laser alignment system to align a motor-to-pump coupling, with the laser beam visible across the shafts.",
+  "introImageCaption": "Laser shaft alignment in the field — measuring offset and angularity across the coupling in real time.",
+
   "featuresEyebrow": "Capabilities",
   "featuresHeading": "Alignment measured in thousandths, not eyeballed.",
   "featuresLead": "Even small amounts of angular or offset misalignment compound over time into vibration, premature bearing and seal failure, coupling wear, and unplanned downtime. Laser alignment finds it and corrects it to spec.",

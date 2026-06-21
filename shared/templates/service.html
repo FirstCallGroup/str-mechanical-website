@@ -150,6 +150,27 @@
       </div>
     </section>
 
+    <!-- 1b. WHAT IT IS — intro split with photo -->
+    {{#if introHeading}}
+    <section class="section">
+      <div class="container">
+        <div class="service-intro__grid">
+          <div class="service-intro__body">
+            <span class="eyebrow">{{introEyebrow}}</span>
+            <h2>{{introHeading}}</h2>
+            {{#each introParagraphs}}
+            <p>{{this}}</p>
+            {{/each}}
+          </div>
+          <figure class="service-intro__figure">
+            <img src="{{introImage}}" alt="{{introImageAlt}}" loading="lazy" decoding="async" width="972" height="630" />
+            <figcaption class="service-intro__caption">{{introImageCaption}}</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    {{/if}}
+
     <!-- 2. WHAT'S INCLUDED — feature grid -->
     <section class="section">
       <div class="container">

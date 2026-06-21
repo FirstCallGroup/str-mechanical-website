@@ -92,6 +92,36 @@
   font-size: var(--text-sm);
 }
 
+/* ===== INTRO SPLIT (what-it-is text + photo) ===== */
+.service-intro__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+@media (max-width: 1023px) { .service-intro__grid { grid-template-columns: 1fr; gap: var(--space-6); } }
+.service-intro__body h2 { margin-bottom: var(--space-4); max-width: 20ch; }
+.service-intro__body p {
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-4);
+  max-width: 60ch;
+}
+.service-intro__body p:last-child { margin-bottom: 0; }
+.service-intro__figure { margin: 0; }
+.service-intro__figure img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  object-fit: cover;
+}
+.service-intro__caption {
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
 /* ===== TWO-COLUMN INFO BLOCK (why-it-matters band) ===== */
 .info-grid {
   display: grid;
