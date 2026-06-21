@@ -1,0 +1,64 @@
+{
+  "slug": "shaft-alignment",
+  "title": "Precision Shaft Alignment",
+  "lede": "Laser-guided shaft alignment for motors, pumps, fans, compressors, gearboxes, and other rotating equipment. Bringing coupled machinery back to OEM tolerance reduces vibration, protects bearings and seals, lowers energy use, and keeps production running.",
+  "metaDescription": "Precision laser shaft alignment from STR Mechanical — align motors, pumps, fans, compressors, chillers, and gearboxes to OEM tolerance to cut vibration, extend bearing and seal life, and lower energy use.",
+  "canonicalUrl": "https://strmechanical.com/services/shaft-alignment",
+  "careersUrl": "https://firstcallmechanical.com/mechanical/careers",
+
+  "featuresEyebrow": "Capabilities",
+  "featuresHeading": "Alignment measured in thousandths, not eyeballed.",
+  "featuresLead": "Even small amounts of angular or offset misalignment compound over time into vibration, premature bearing and seal failure, coupling wear, and unplanned downtime. Laser alignment finds it and corrects it to spec.",
+
+  "features": [
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><circle cx=\"12\" cy=\"12\" r=\"8\"/><path d=\"M12 1v3M12 20v3M1 12h3M20 12h3\"/></svg>",
+      "title": "Laser-guided precision",
+      "body": "Dual laser measurement heads read angular and offset misalignment to the thousandth of an inch and guide live corrections — no straightedges, no feeler gauges, no guesswork."
+    },
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 13a9 9 0 0 1 18 0\"/><path d=\"M12 13l5-3\"/><circle cx=\"12\" cy=\"13\" r=\"1.5\"/></svg>",
+      "title": "Aligned to OEM tolerance",
+      "body": "Every coupling is brought to the manufacturer's spec and your operating conditions, with thermal-growth compensation so the machine runs true at temperature — not just cold."
+    },
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2\"/></svg>",
+      "title": "Motors, pumps & rotating gear",
+      "body": "Electric motors, pumps, fans and blowers, compressors, chillers, gearboxes, and process equipment — anything coupled and turning."
+    },
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 12h3l2-6 4 12 3-9 2 3h6\"/></svg>",
+      "title": "Vibration & wear reduction",
+      "body": "Tight alignment cuts vibration at the source, sparing bearings, seals, and couplings the cyclic load that wears them out early."
+    },
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"3 7 9 13 13 9 21 17\"/><polyline points=\"21 11 21 17 15 17\"/></svg>",
+      "title": "Lower energy draw",
+      "body": "Misaligned shafts waste power dragging against themselves. Bringing them into tolerance trims energy consumption and the heat that comes with it."
+    },
+    {
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 3h6a1 1 0 0 1 1 1v1h2a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h2V4a1 1 0 0 1 1-1z\"/><path d=\"M9 13l2 2 4-4\"/></svg>",
+      "title": "Documented before & after",
+      "body": "You get a report showing measured misalignment and final corrected values — proof the work was done and a baseline for your reliability program."
+    }
+  ],
+
+  "whyEyebrow": "Why STR",
+  "whyHeading": "Alignment as a reliability discipline, not an afterthought.",
+  "whyParagraphs": [
+    "Most coupled equipment gets aligned once at install with a straightedge and is never checked again. By the time vibration or a hot bearing shows up, the damage is already accumulating — and the repair bill dwarfs what an alignment would have cost.",
+    "Our Charlotte industrial group brings precision laser alignment in-house. We dial rotating equipment back to OEM tolerance, catch the soft-foot and pipe-strain problems that defeat alignment, and hand you the numbers to prove it."
+  ],
+  "whyBullets": [
+    "Laser alignment on motors, pumps, fans, compressors, chillers, and gearboxes",
+    "Thermal-growth and soft-foot correction, not just cold alignment",
+    "Vibration reduction that extends bearing and seal life",
+    "Lower energy consumption from true-running shafts",
+    "Before/after measurement reports for your maintenance records",
+    "Available standalone or built into a planned-maintenance program"
+  ],
+
+  "ctaEyebrow": "Hearing vibration? Replacing bearings too often?",
+  "ctaHeading": "Let's get your rotating equipment running true.",
+  "ctaParagraph": "Whether it's a single critical pump or a plant-wide alignment survey, our industrial team can measure, correct, and document it — and keep it in tolerance."
+}

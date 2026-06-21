@@ -47,6 +47,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://strmechanical.com/services/shaft-alignment.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://strmechanical.com/services/planned-maintenance.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
